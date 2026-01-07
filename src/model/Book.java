@@ -5,10 +5,12 @@ public abstract class Book {
     private String isbn, title, author;
     
     public Book(String isbn, String title, String author) {
-        this.isbn = isbn; this.title = title; this.author = author;
+        this.isbn = isbn; 
+        this.title = title; 
+        this.author = author;
     }
     
-    
+    // Encapsulation: getters only
     public String getIsbn() { return isbn; }
     public String getTitle() { return title; }
     public String getAuthor() { return author; }
@@ -16,8 +18,11 @@ public abstract class Book {
     public abstract String getCategory();  // Abstraction
     
     @Override
-    public boolean equals(Object o) {  // Polymorphism via override
-        return o instanceof Book && isbn.equals(((Book)o).isbn;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Objects.equals(isbn, book.isbn);
     }
     
     @Override
