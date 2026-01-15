@@ -9,7 +9,7 @@ public class LibraryService {
     private TransactionStack transactionStack = new TransactionStack();
     private static final int MAX_ISSUES_PER_USER = 3;
     
-    private LibraryService() {}  // Private constructor (Singleton)
+    private LibraryService() {}  
     
     public static LibraryService getInstance() {
         if (instance == null) {
@@ -35,8 +35,7 @@ public class LibraryService {
         }
         return isbn;
     }
-    
-    // Getters for GUI display
+
     public java.util.List<Book> getFictionBooks() {
         return bookShelf.getByCategory("Fiction");
     }

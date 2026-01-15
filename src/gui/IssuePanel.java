@@ -13,7 +13,6 @@ public class IssuePanel extends JPanel {
         this.service = service;
         setLayout(new BorderLayout());
         
-        // Top controls
         JPanel topPanel = new JPanel();
         isbnField = new JTextField(12);
         JButton issueBtn = new JButton("➕ Request Issue");
@@ -41,12 +40,12 @@ public class IssuePanel extends JPanel {
         topPanel.add(processBtn);
         add(topPanel, BorderLayout.NORTH);
         
-        // Queue display (shows LinkedList contents)
+        
         queueDisplay = new JTextArea();
         queueDisplay.setEditable(false);
         add(new JScrollPane(queueDisplay), BorderLayout.CENTER);
         
-        // Status
+    
         statusLabel = new JLabel("Queue ready");
         add(statusLabel, BorderLayout.SOUTH);
         

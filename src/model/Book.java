@@ -10,12 +10,12 @@ public abstract class Book {
         this.author = author;
     }
     
-    // Encapsulation: getters only
+  
     public String getIsbn() { return isbn; }
     public String getTitle() { return title; }
     public String getAuthor() { return author; }
     
-    public abstract String getCategory();  // Abstraction
+    public abstract String getCategory();  
     
     @Override
     public boolean equals(Object o) {

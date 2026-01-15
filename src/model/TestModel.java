@@ -7,8 +7,8 @@ public class TestModel {
         books.add(new FictionBook("F001", "Harry Potter", "JK Rowling"));
         books.add(new TextBook("T001", "Java OOP", "Your Prof"));
         
-        for(Book b : books) {  // Polymorphism demo!
-            System.out.println(b);  // Calls overridden toString()
+        for(Book b : books) {  
+            System.out.println(b); 
         }
     }
 }

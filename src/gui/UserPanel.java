@@ -61,7 +61,7 @@ public class UserPanel extends JPanel {
         topPanel.add(undoBtn);
         add(topPanel, BorderLayout.NORTH);
         
-        // History display
+       
         historyArea = new JTextArea("User History (Stack LIFO):\n");
         historyArea.setEditable(false);
         add(new JScrollPane(historyArea), BorderLayout.CENTER);

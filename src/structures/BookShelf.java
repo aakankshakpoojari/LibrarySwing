@@ -27,7 +27,7 @@ public class BookShelf {
     
     public void removeBook(String isbn) {
         books.removeIf(b -> b.getIsbn().equals(isbn));
-        // Clean category map too
+       
         categoryMap.values().forEach(list -> list.removeIf(b -> b.getIsbn().equals(isbn)));
     }
 }
