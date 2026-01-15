@@ -2,7 +2,7 @@
 
 *Built with Java Swing + OOP + Data Structures*
 
-(images/demo.png)
+https://github.com/aakankshakpoojari/LibrarySwing/blob/main/images/demo.png/
 
 ## What's this about?
 There are 3 tabs that shows:
