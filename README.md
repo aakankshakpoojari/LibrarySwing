@@ -1,19 +1,38 @@
-# Library Management System
+#  Library Management System
 
-**Java OOP + Data Structures Mini-Project**  
-![Demo](images/demo.png)
+*Built with Java Swing + OOP + Data Structures*
 
-## Features
-- 📚 **Books**: ArrayList/HashMap search + live table
-- 📋 **Issue**: Queue (FIFO requests)  
-- 👤 **Users**: HashMap + Stack (LIFO undo)
+(images/demo.png)
 
-## OOP Demonstrated
-- Encapsulation, Inheritance, Abstraction, Polymorphism
-- Singleton pattern
+## What's this about?
+There are 3 tabs that shows:
+- **Books** - Add/search 20+ books (ArrayList + HashMap)
+- **Issue** - Queue up book requests (FIFO processing)  
+- **Users** - Track users + undo issues (Stack + HashMap)
 
-## Run
-```bash
-F5 on MainGUI.java  (VS Code)
-# OR
-./run.sh
+## What Each Tab Does
+
+| Tab | What it shows | Data Structure |
+|-----|---------------|----------------|
+| **📚 Books** | Live table + search | `ArrayList<Book>` |
+| **📋 Issue** | Request → Process queue | `Queue<String>` |
+| **👤 Users** | Add user + undo stack | `HashMap + Stack` |
+**No databases/frameworks** - pure Java standard library!
+
+## Tech I Used
+OOP: Encapsulation, Inheritance, Polymorphism, Singleton
+Data Structures: ArrayList, HashMap, Queue, Stack
+Swing GUI: JTable, JTabbedPane, event handling
+
+## How to Run
+**VS Code**: F5 on `MainGUI.java`  
+**Terminal**: `./run.sh`
+
+## File Structure
+src/
+├── model/ ← Book classes (inheritance demo)
+├── structures/ ← ArrayList/Queue/Stack wrappers
+├── service/ ← Singleton LibraryService
+└── gui/ ← Swing interface (my favorite part!)
+
+Shubham bhavatu 
