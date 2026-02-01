@@ -20,9 +20,9 @@ There are 3 tabs that shows:
 **No databases/frameworks** - pure Java standard library!
 
 ## Tech I Used
-OOP: Encapsulation, Inheritance, Polymorphism, Singleton
-Data Structures: ArrayList, HashMap, Queue, Stack
-Swing GUI: JTable, JTabbedPane, event handling
+OOP : Encapsulation, Inheritance, Polymorphism, Singleton <br>
+Data Structures : ArrayList, HashMap, Queue, Stack <br>
+Swing GUI : JTable, JTabbedPane, event handling
 
 ## How to Run
 **VS Code**: F5 on `MainGUI.java`  
@@ -33,6 +33,6 @@ src/
 ├── model/ ← Book classes (inheritance demo)
 ├── structures/ ← ArrayList/Queue/Stack wrappers
 ├── service/ ← Singleton LibraryService
-└── gui/ ← Swing interface (my favorite part!)
+└── gui/ ← Swing interface 
 
 Shubham bhavatu 
